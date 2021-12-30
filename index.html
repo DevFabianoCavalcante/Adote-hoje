@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./assets/css/landingpage.css">
+</head>
+<body>
+
+    <input type="checkbox" id="fechar-menu" class="fechar-menu" aria-label="fechar menu" role="botão">
+    <label class="fechar-menu-label" for="fechar-menu"></label>
+    <aside class="menu fundo-branco" title="fechar menu">
+        <div class="conteudo-principal menu-conteudo">
+            <h1 onclick="getElementById('fechar-menu') .checked= false;">
+                <a href="#">LOGO</a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('fechar-menu') .checked= false;">
+                    <li> <a href="#intro">Inicio</a> </li>
+                    <li> <a href="#requisitos">Requisitos</a> </li>
+                    <li> <a href="#beneficio">Benefícios</a> </li>
+                    <li> <a href="#galeria">Galeria</a> </li>
+                    <li> <a href="#contato">Contato</a> </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"> </div>
+
+    <section id="intro" class="fundo-principal section intro">
+        <div class="conteudo-principal conteudo-intro">
+            <div class="intro-text-content">
+                <h2>Beneficios de adotar um animal</h2>
+                <p>Já parou para pensar que ao adotar um animal, além de estar salvando a vida dele, também está aumentando a qualidade da sua vida e das pessoas que vivem com você? Pois é justamente sobre isso que falaremos.</p>
+            </div>    
+            <div class="intro-img">
+                <img src="./assets/img/undraw_relaxing_walk_mljx.svg" alt="Desenho de uma mulher caminhando em uma praça com seu cachorrinho">
+            </div>
+        </div> 
+    </section>
+
+    <section id="requisitos" class="fundo-branco section">
+        <div class="conteudo-principal lista conteudo-adoção">
+            <h2>O que é necessário para realizar a adoção?</h2>
+            <p>Antes de tudo, o primeiro passo é realizar a adoção do animal, que constitui em um processo bastante simples e quase sem burocracia, básicamente são apenas formalidades para controlar o processo de adoção e tambem garantir que o animal terá um lar agradável para recomeçar a vida. Os requisitos consistem em:</p>
+            <ul>
+                <li><strong>Idade:</strong> Permitido somente pessoas acima de 21 anos;</li>
+                <li><strong>Documentos:</strong> Necessário a apresentação de RG, CPF e comprovante de residência;</li>
+                <li><strong>Responsabilidade:</strong> Exigência de assinar um termo de responsabilidade;</li>
+                <li><strong>Entrevista:</strong> Algumas entidades realizam um processo de entrevista, para verificar se a pessoa tem condições de cuidar do animal, como por exemplo questões de alimentação, veterinário, tempo para dar atenção, etc.</li>
+                <li><strong>Taxa: </strong> Algumas entidades podem cobrar pequenas taxas que ajudam a manter em funcionamento a instituição para a manutenção do bem estar dos demais animais que seguem na fila de adoção.</li>
+            </ul>            
+        </div>
+    </section>
+
+    <section id="beneficio" class="grid-one fundo-principal section">
+        <div class="grid-conteudo conteudo-principal">
+            <h2 class="heading-top3">Top 3 benefícios da adoção</h2>
+
+            <div class="grid">
+                <article>
+                    <h3>Diminuição do Estresse</h3>
+                    <p>Experimentos nos EUA analisaram os niveis de estresse em pessoas sozinhas e compararam com pessoas donas de animais. Nas pessoas que tinham um pet, o nivel de estresse foi menor.</p>
+                </article>
+                <article>
+                    <h3>Diminuição da Depressão</h3>
+                    <p>A sensação de solidão, ansiedade e aflição é consideravelmente diminuida na presença do animal.</p>
+                </article>
+                <article>
+                    <h3>Benéfico para o coração</h3>
+                    <p>Pesquisas apontam que ter um pet em casa pode ajudar a reduzir a pressão sanguínea e colesterol, prevenindo assim doenças cardiovasculares.</p>
+                </article>
+                <footer>Fonte: Vigilantes do Peso.</footer>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="grid-one fundo-branco section">
+        <div class="grid-conteudo conteudo-principal">
+            <h2 class="heading-top3">Galeria</h2>
+
+            <div class="grid">
+                <div class="galeria-img">
+                    <img src="https://images.unsplash.com/photo-1587354004405-bbce24c893c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZ3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="cara de um cachorro cor de caramelo"/>
+                </div>
+                <div class="galeria-img">
+                    <img src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwYW5kJTIwZG9nfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="gato lado a lado com um cachorro enquanto o observa"/>
+                </div>
+                <div class="galeria-img">
+                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="cara de um gato de olhos verdes e pelo marrom tomando sol"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="fundo-principal section intro">
+        <div class="conteudo-principal conteudo-intro">
+            <div class="intro-text-content">
+                <h2>Contato</h2>
+                <p>Para entrar em contato e saber mais sobre a o processo de adoção, os pontos de adoção mais próximos da sua residência ou tirar alguma outra dúvida, basta preencher o formulário abaixo e aguardar o contato de um de nosso representantes.</p>
+            </div>    
+            <div class="intro-img">
+                <img src="./assets/img/undraw_contact_us_re_4qqt.svg" alt="Desenho de uma mulher e icones de meios de contato flutuando na tela, como telefone e email">
+            
+            </div> 
+
+            <div class="form">
+                <fieldset class="grade-formulario">
+                    <legend>Contato</legend>
+
+                    <div class="formulario-contato">
+                        <label for="primeiro-nome">Primeiro nome</label>
+                        <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Seu nome">
+                    </div>
+
+                    <div class="formulario-contato">
+                        <label for="ultimo-nome">Último Nome</label>
+                        <input type="text" name="ultimo-nome" id="ultimo-nome" placeholder="Seu ultimo nome">
+                    </div>
+
+                    <div class="formulario-contato">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Seu Email">
+                    </div>
+
+                    <div class="formulario-contato full-width">
+                        <label for="sua-mensagem">Sua mensagem</label>
+                        <textarea name="sua-mensagem" id="sua-mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+
+                    <div class="formulario-contato full-width">
+                        <button type="submit">Enviar Mensagem</button>
+                    </div>
+
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodapé" class="rodapé fundo-branco">
+        <p>Landing page ficticia, feita por Fabiano Cavalcante.</p>
+    </footer>
+
+    <a class="voltar-topo" href="#">TOPO</a>
+</body>
+</html>
