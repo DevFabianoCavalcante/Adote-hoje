@@ -1,4 +1,4 @@
-<h1 align="center">Adote Hoje</h1>
+<h1 align="center">Adote Hoje :cat: :dog:</h1>
 
 ## Esse projeto é uma landing page da ONG ficícia Adote Hoje. Produzi essa página no começo dos meus estudos em HTML e CSS em dez/2021, e agora em jul/2022 reformulei todo o projeto procurando manter a base.
 
