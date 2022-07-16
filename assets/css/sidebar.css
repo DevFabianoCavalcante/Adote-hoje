@@ -1,0 +1,109 @@
+.menu{
+    position: fixed;
+    height: 7.6rem;
+    width: 100%;
+    box-shadow: 0 2px 5px var(--primary-3);
+    background-color: var(--secondary-2);
+    z-index: 1;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-name {
+    font-size: 3rem;
+    font-family: var(--hennyPenny);
+    font-weight: 700;
+    letter-spacing: 1rem;
+    color: var(--secondary-7);
+    transition: ease-in-out .5s;
+}
+
+#btn-menu {
+    display: none;
+    height: 3rem;
+    width: 4rem;
+    background-color: transparent;
+    border: none;
+}
+
+#btn-menu img {
+    height: 3rem;
+    width: 4rem;
+}
+
+.menu-content ul {
+    display: flex;
+    font-size: 2.4rem;
+    font-family: var(--rozhaOne);
+    padding: 2rem 0;
+}
+
+.menu-content li {
+    margin: 0 2rem;
+    border-bottom: 2px solid transparent;
+    transition: ease-in-out .5s;
+}
+
+.menu-content li:hover {
+    border-bottom: 2px solid var(--secondary-7);
+}
+
+.menu-content li a {
+    color: var(--secondary-7);
+}
+
+.menu-content li:hover, .logo-name:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 1100px) {
+    .menu {
+        height: 7rem;
+    }
+
+    .menu-content ul {
+        display: block;
+        position: absolute;
+        height: 0;
+        width: 100%;
+        top: 7rem;
+        right: 0;
+        background-color: var(--secondary-2);
+        z-index: 100;
+        transition: ease-in-out .5s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .menu-content li {
+        margin: 1.5rem 1rem;
+        border-bottom: 2px solid rgba(0, 78, 64, 0.2);
+    }
+
+    .menu-content a {
+        padding: 1rem 0;
+    }
+
+    #btn-menu {
+        display: block;
+    }
+
+    #nav-menu.activeMenuMobile #options-menu{
+        visibility: visible;
+        height: calc(100vh - 7rem);
+        overflow-y: hidden;
+    }
+
+    .menu-content li:hover {
+        border-bottom: 2px solid rgba(0, 78, 64, 0.2);
+    }
+    
+    .menu-content li:hover, .logo-name:hover {
+        transform: scale(1);
+    }
+
+}

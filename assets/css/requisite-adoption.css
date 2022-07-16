@@ -1,0 +1,138 @@
+.container-adoption {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 150rem;
+    margin: 0 auto 10rem auto;
+    padding: 10rem 0 0 0;
+}
+
+.container-image-adoption {
+    display: flex;
+    flex-flow: row wrap;
+    height: 70rem;
+    width: 55rem;
+    overflow-y: scroll;
+}
+
+.container-image-adoption img {
+    width: 50rem;
+    height: 30rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-3);
+    margin: 2rem;
+}
+
+.container-image-adoption {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-6) var(--secondary-2);
+}
+  
+.container-image-adoption::-webkit-scrollbar {
+    width: 5px;
+}
+  
+.container-image-adoption::-webkit-scrollbar-track {
+    background: var(--secondary-6);
+}
+  
+.container-image-adoption::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-2);
+    border-radius: 2px;
+}
+
+.content-adoption{
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 80rem;
+    background-color: var(--secondary-6);
+    box-shadow: 0 4px 10px var(--primary-4);
+    border: none;
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+.content-adoption h2 {
+    font-size: 4rem;
+    font-family: var(--arima);
+    font-weight: bold;
+    color: var(--primary-1);
+    margin: 0 0 4rem 0;
+}
+
+.content-adoption p {
+    font-size: 2rem;
+    font-family: var(--roboto);
+    text-align: left;
+    font-weight: 400;
+    color: var(--primary-3);
+    margin: 0 0 3rem 0;
+    max-width: 50rem;
+}
+
+.content-adoption li {
+    font-size: 1.9rem;
+    font-family: var(--roboto);
+    text-align: left;
+    color: var(--primary-3);
+    margin: 0 0 1.5rem 0;
+    max-width: 50rem;
+}
+
+@media (max-width: 1200px) {
+    .container-adoption {
+        flex-flow: column-reverse wrap;
+        justify-content: center;
+        padding: 0;
+        height: auto;
+    }
+
+    .content-adoption{
+        margin: 0 2rem 10rem 2rem;
+    }
+
+    .container-image-adoption {
+        height: 40rem;
+        width: 55rem;
+    }
+    
+    .container-image-adoption img {
+        width: 50rem;
+        height: 30rem;
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .container-adoption {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .content-adoption{
+        max-width: 95%;
+        min-height: 50rem;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    
+    .content-adoption h2 {
+        font-size: 2.5rem;
+    }
+    
+    .content-adoption p {
+        font-size: 1.5rem;
+        line-height: 150%;
+    }
+    
+    .content-adoption li {
+        font-size: 1.5rem;
+    }
+
+    .container-image-adoption {
+        display: none;
+    }
+}

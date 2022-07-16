@@ -1,0 +1,66 @@
+:root{
+    --primary-1: #F7F7F7;
+    --primary-2: #F2F2F2;
+    --primary-3: #CCCCCC;
+    --primary-4: #999999;
+    --primary-5: #6B6B6B;
+    --primary-6: #595959;
+    --primary-7: #474747;
+    --primary-8: #363636;
+    --primary-9: #242424;
+    --primary-10: #121212;
+    --secondary-1: #84FFD2;
+    --secondary-2: #55EFB7;
+    --secondary-3: #3FD79F;
+    --secondary-4: #18A773;
+    --secondary-5: #098054;
+    --secondary-6: #00613E;
+    --secondary-7: #004E40;
+    --hennyPenny: 'Henny Penny', cursive;
+    --rozhaOne: 'Rozha One', serif;
+    --roboto: 'Roboto', sans-serif;
+    --arima: 'Arima', cursive;
+    --gap: 10rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+    background-color: var(--primary-1);
+}
+
+.model {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-6) var(--secondary-2);
+  }
+  
+body::-webkit-scrollbar {
+    width: 5px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: var(--secondary-6);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-2);
+    border-radius: 2px;
+}

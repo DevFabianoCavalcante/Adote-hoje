@@ -4,151 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <meta name="author" content="Fabiano Cavalcante">
+    <meta property="og:image" content="https://iili.io/wwliiP.jpg">
+    <meta property="og:title" content="Adote Hoje">
+    <meta name="description" content="Saiba onde e como adotar um animal de estimação.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="./assets/css/landingpage.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@400;700&family=Henny+Penny&family=Roboto:wght@400;500;700&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main-style.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/introducion.css">
+    <link rel="stylesheet" href="./assets/css/requisite-adoption.css">
+    <link rel="stylesheet" href="./assets/css/benefit-adoption.css">
+    <link rel="stylesheet" href="./assets/css/row-adoption.css">
+    <link rel="stylesheet" href="./assets/css/location-adoptions.css">
+    <title>Adote Hoje</title>
 </head>
 <body>
+    <div class="model">
+        <div class="card-adoption">
+            <img id="image-card"/>
+            <h1 id="name-card"></h1>
+            <div class="info-card"></div>
+                <div class="content-infos">
+                    <div class="text-card text-align-left">
+                        <p id="genre"></p>
+                        <p id="age"></p>
+                    </div>
+                    <div>
+                        <div class="text-card text-align-right">
+                            <p id="contact"></p>
+                            <p id="location"></p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p id="description" class="description-content"></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <input type="checkbox" id="fechar-menu" class="fechar-menu" aria-label="fechar menu" role="botão">
-    <label class="fechar-menu-label" for="fechar-menu"></label>
-    <aside class="menu fundo-branco" title="Selecionar">
-        <div class="conteudo-principal menu-conteudo">
-            <h1 onclick="getElementById('fechar-menu') .checked= false;">
-                <a href="#">LOGO</a>
-            </h1>
-            <nav>
-                <ul onclick="getElementById('fechar-menu') .checked= false;">
-                    <li> <a href="#intro">Inicio</a> </li>
-                    <li> <a href="#requisitos">Requisitos</a> </li>
-                    <li> <a href="#beneficio">Benefícios</a> </li>
-                    <li> <a href="#galeria">Galeria</a> </li>
-                    <li> <a href="#contato">Contato</a> </li>
+    <header class="menu menu-content">
+            <a href="#" class="logo-name">Adote Hoje</a>
+            <nav id="nav-menu">
+                <button type="button" id="btn-menu"><img src="./assets/img/menu-icon.svg" alt="Ícone menu hamburguer"></button>
+                <ul id="options-menu">
+                    <li> <a href="#requisites" class="close">REQUISITOS</a></li>
+                    <li> <a href="#benefit" class="close">BENEFÍCIOS</a></li>
+                    <li> <a href="#adoption" class="close">ADOÇÃO</a></li>
+                    <li> <a href="#plus" class="close">SABER MAIS</a></li>
                 </ul>
             </nav>
-        </div>
-    </aside>
+    </header>
+    <main>
+        <section>
+            <div class="content-intro">
+                <div class="intro-text-content">
+                    <h2>Benefícios em adotar um animal</h2>
+                    <p>Já parou para pensar que ao adotar um animal, além de estar salvando a vida dele, também está aumentando a qualidade da sua vida e das pessoas que vivem com você? Conheça um pouco mais sobre as vantagens e como adotar seu bichinho de estimação.</p>
+                </div>    
+                <div class="intro-img">
+                    <img src="./assets/img/gato na floresta.jpg" alt="Gato cinza em meio a folhas verdes">
+                </div>
+            </div> 
+        </section>
 
-    <div class="menu-spacing"> </div>
-
-    <section id="intro" class="fundo-principal section intro">
-        <div class="conteudo-principal conteudo-intro">
-            <div class="intro-text-content">
-                <h2>Beneficios de adotar um animal</h2>
-                <p>Já parou para pensar que ao adotar um animal, além de estar salvando a vida dele, também está aumentando a qualidade da sua vida e das pessoas que vivem com você? Pois é justamente sobre isso que falaremos.</p>
-            </div>    
-            <div class="intro-img">
-                <img src="./assets/img/undraw_relaxing_walk_mljx.svg" alt="Desenho de uma mulher caminhando em uma praça com seu cachorrinho">
+        <section>
+            <div class="container-adoption" id="requisites">
+                <div class="container-image-adoption">
+                    <img src="./assets/img/gato em fundo verde.jpg" alt="gato em foto 3x4">
+                    <img src="./assets/img/gato em fundo preto.jpg" alt="gato em foto 3x4">
+                    <img src="./assets/img/gato-sofa.jpg" alt="gato repousando em um sofá">
+                    <img src="./assets/img/gato olhando para câmera.jpg" alt="gato olhando para a câmera">
+                    <img src="./assets/img/gato focinho.jpg" alt="gato olhando cheirando a câmera que o fotografa.">
+                    <img src="./assets/img/gato dormindo.jpg" alt="gato dormindo ao lado de rato de brinquedo.">
+                </div>
+                <div class="content-adoption">
+                    <h2>O que é necessário para realizar a adoção?</h2>
+                    <p>O processo é bastante simples, básicamente são formalidades para controlar o processo de adoção e tambem garantir que o animal terá um lar agradável para recomeçar a vida, lembrando que as regras podem mudar de acordo com a instituição. No geral os requisitos consistem em:</p>
+                    <ul>
+                        <li><strong>Idade:</strong> Permitido somente pessoas acima de 21 anos;</li>
+                        <li><strong>Documentos:</strong> Necessário a apresentação de RG, CPF e comprovante de residência;</li>
+                        <li><strong>Responsabilidade:</strong> Exigência de assinar um termo de responsabilidade;</li>
+                        <li><strong>Entrevista:</strong> Algumas entidades realizam um processo de entrevista, para verificar se a pessoa tem condições de cuidar do animal, como por exemplo questões de alimentação, veterinário, tempo para dar atenção, etc.</li>
+                        <li><strong>Taxa: </strong> Podem ser cobradas pequenas taxas que ajudam a manter em funcionamento a instituição para a manutenção do bem estar dos demais animais que seguirem na fila de adoção.</li>
+                    </ul>            
+                </div>
             </div>
-        </div> 
-    </section>
+        </section>
+    </main>
 
-    <section id="requisitos" class="fundo-branco section">
-        <div class="conteudo-principal lista conteudo-adoção">
-            <h2>O que é necessário para realizar a adoção?</h2>
-            <p>Antes de tudo, o primeiro passo é realizar a adoção do animal, que constitui em um processo bastante simples e quase sem burocracia, básicamente são apenas formalidades para controlar o processo de adoção e tambem garantir que o animal terá um lar agradável para recomeçar a vida. Os requisitos consistem em:</p>
-            <ul>
-                <li><strong>Idade:</strong> Permitido somente pessoas acima de 21 anos;</li>
-                <li><strong>Documentos:</strong> Necessário a apresentação de RG, CPF e comprovante de residência;</li>
-                <li><strong>Responsabilidade:</strong> Exigência de assinar um termo de responsabilidade;</li>
-                <li><strong>Entrevista:</strong> Algumas entidades realizam um processo de entrevista, para verificar se a pessoa tem condições de cuidar do animal, como por exemplo questões de alimentação, veterinário, tempo para dar atenção, etc.</li>
-                <li><strong>Taxa: </strong> Algumas entidades podem cobrar pequenas taxas que ajudam a manter em funcionamento a instituição para a manutenção do bem estar dos demais animais que seguem na fila de adoção.</li>
-            </ul>            
-        </div>
-    </section>
-
-    <section id="beneficio" class="grid-one fundo-principal section">
-        <div class="grid-conteudo conteudo-principal">
+    <section class="grid-one" id="benefit">
+        <div class="grid-content">
             <h2 class="heading-top3">Top 3 benefícios da adoção</h2>
 
-            <div class="grid">
+            <div class="benefit-list">
                 <article>
                     <h3>Diminuição do Estresse</h3>
-                    <p>Experimentos nos EUA analisaram os niveis de estresse em pessoas sozinhas e compararam com pessoas donas de animais. Nas pessoas que tinham um pet, o nivel de estresse foi menor.</p>
+                    <p>Experimentos nos EUA analisaram os níveis de estresse em pessoas que vivem sozinhas e compararam com pessoas donas de animais. Nas pessoas que tinham um pet, o nivel de estresse foi menor.</p>
                 </article>
                 <article>
                     <h3>Diminuição da Depressão</h3>
-                    <p>A sensação de solidão, ansiedade e aflição é consideravelmente diminuida na presença do animal.</p>
+                    <p>A sensação de solidão, ansiedade e aflição é consideravelmente diminuida com a presença do animal.</p>
                 </article>
                 <article>
                     <h3>Benéfico para o coração</h3>
                     <p>Pesquisas apontam que ter um pet em casa pode ajudar a reduzir a pressão sanguínea e colesterol, prevenindo assim doenças cardiovasculares.</p>
                 </article>
-                <footer>Fonte: Vigilantes do Peso.</footer>
+                <span>Fonte: <a href="https://www.vigilantesdopeso.com.br/br/artigos/10-beneficios-de-ter-um-pet#:~:text=C%C3%A3es%20podem%20ajudar%20a%20identificar,treinados%20para%20fazer%20essas%20descobertas." target="_blank">Vigilantes do Peso.</a></span>
             </div>
         </div>
     </section>
 
-    <section id="galeria" class="grid-one fundo-branco section">
-        <div class="grid-conteudo conteudo-principal">
-            <h2 class="heading-top3">Galeria</h2>
-
-            <div class="grid">
-                <div class="galeria-img">
-                    <img src="https://images.unsplash.com/photo-1587354004405-bbce24c893c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZ3xlbnwwfDJ8MHx8&auto=format&fit=crop&w=500&q=60" alt="cara de um cachorro cor de caramelo"/>
-                </div>
-                <div class="galeria-img">
-                    <img src="https://images.unsplash.com/photo-1509205477838-a534e43a849f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0JTIwYW5kJTIwZG9nfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="gato lado a lado com um cachorro enquanto o observa"/>
-                </div>
-                <div class="galeria-img">
-                    <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0fGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="cara de um gato de olhos verdes e pelo marrom tomando sol"/>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contato" class="fundo-principal section intro">
-        <div class="conteudo-principal conteudo-intro">
-            <div class="intro-text-content">
-                <h2>Contato</h2>
-                <p>Para entrar em contato e saber mais sobre a o processo de adoção, os pontos de adoção mais próximos da sua residência ou tirar alguma outra dúvida, basta preencher o formulário abaixo e aguardar o contato de um de nosso representantes.</p>
-            </div>    
-            <div class="intro-img">
-                <img src="./assets/img/undraw_contact_us_re_4qqt.svg" alt="Desenho de uma mulher e icones de meios de contato flutuando na tela, como telefone e email">
+    <section id="adoption">
+        <h2 class="title-adoption">Fila de Adoção</h2>
+        <div class="main-content-adoption adoption-row-content">
             
-            </div> 
+        </div>
+    </section>
 
-            <div class="form">
-                <fieldset class="grade-formulario">
-                    <legend>Contato</legend>
-
-                    <div class="formulario-contato">
-                        <label for="primeiro-nome">Primeiro nome</label>
-                        <input type="text" name="primeiro-nome" id="primeiro-nome" placeholder="Seu nome">
+    <section>
+        <div class="container-locations" id="plus">
+            <div class="left-side">
+                <div class="title-locations">
+                    <h1>Locais onde você poderá mudar a vida de um pet</h1>
+                    <div class="container-image">
+                        <img src="./assets/img/icon-pet.svg" alt="Ilustração da parte de baixo da pata de um animal" />
                     </div>
-
-                    <div class="formulario-contato">
-                        <label for="ultimo-nome">Último Nome</label>
-                        <input type="text" name="ultimo-nome" id="ultimo-nome" placeholder="Seu ultimo nome">
-                    </div>
-
-                    <div class="formulario-contato">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="Seu Email">
-                    </div>
-
-                    <div class="formulario-contato full-width">
-                        <label for="sua-mensagem">Sua mensagem</label>
-                        <textarea name="sua-mensagem" id="sua-mensagem" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
-                    </div>
-
-                    <div class="formulario-contato full-width">
-                        <button type="submit">Enviar Mensagem</button>
-                    </div>
-
-                </fieldset>
+                </div>
+                <div class="contact-locations-container">
+                    <ul>
+                        <li><a href="https://adotar.com.br/?cc=802&cn=df-brasilia" target="_blank">Adotar.com.br</a></li>
+                        <li><a href="http://www.adoteumfocinho.com.br/" target="_blank">Adote um focinho</a></li>
+                        <li><a href="https://www.amigonaosecompra.com.br/" target="_blank">Amigo não se compra</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.amparanimal.org.br/" target="_blank">Ampara</a></li>
+                        <li><a href="https://www.caosemdono.com.br/" target="_blank">Cão sem dono</a></li>
+                        <li><a href="https://www.petfeliz.com.br/" target="_blank">PetFeliz</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right-side">
+                <h2>Adote Hoje</h2>
             </div>
         </div>
     </section>
 
-    <footer id="rodapé" class="rodapé fundo-branco">
-        <p>Desenvolvido por Fabiano Cavalcante © 2021.</p>
-    </footer>
-
-    <a class="voltar-topo" href="#">TOPO</a>
+    <script src="./assets/js/db_pets.js"></script>
+    <script src="./assets/js/insert-cards.js"></script>
+    <script src="./assets/js/menu-mobile.js"></script>
 </body>
 </html>
