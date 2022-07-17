@@ -31,21 +31,10 @@
 .benefit-list h3{
     font-size: 3rem;
     font-family: var(--arima);
+    text-align: left;
     position: relative;
-    padding-left: 5rem;
     margin: 0 0 2rem 0;
     color: var(--secondary-3);
-}
-
-.benefit-list h3::before{
-    counter-increment: grid-counter;
-    content: counter(grid-counter);
-    position: absolute;
-    font-size: 7rem;
-    font-style: italic;
-    top: -4rem;
-    left: -2rem;
-    transform: rotate(5deg);
 }
 
 .benefit-list p {

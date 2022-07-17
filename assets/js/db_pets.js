@@ -84,7 +84,7 @@ let dbPets = [
             localization: 'Salvador - BA',
             contact: 'email@hotmail.com',
         },
-        description: 'Os donos de Jessy com dificuldades financeiras e não estão conseguindo comprar ração, por isso eles estão pedindo ajuda com qualquer quantidade de ração.',
+        description: 'Os donos de Jessy estão com dificuldades financeiras e não estão conseguindo comprar ração, por isso eles estão pedindo ajuda com qualquer quantidade de ração.',
         image: './assets/img/cachorro-deitado.jpg',
     },
     {
